@@ -1,0 +1,120 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    font-family: 'Inter', sans-serif;
+
+    --black-background: #09090A;
+    --purple-box: #8B5CF6;
+    --text-header-color: #FFFFFF;
+    --text-body-color: #A1A1AA;
+    --input-background: #18181B;
+    --input-border: #27272A;
+    --input-border-checked: #A78BFA;
+}
+
+body{
+    background-color: var(--black-background);
+    padding: 6.25rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--text-color);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+
+    background: none;
+    color: var(--text-header-color);
+    font: 1rem 'Inter';
+    font-weight: 600;
+    line-height: 125%;
+
+    border: 1px solid var(--purple-box);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+main{
+
+}
+
+#form-habits{
+    display: flex;
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+    margin-top: 4.06rem;
+
+}
+
+.habit{
+    width: 2.5rem;
+    height: 4rem;
+
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days{
+    display: flex;
+    margin-left: 2rem;
+    gap: 3rem;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.day div{
+    margin: 0.5rem 0;
+
+    font: 1.25rem 'Roboto Mono';
+    color: var(--text-body-color);
+    line-height: 125%;
+    text-align: center;
+}
+
+input{
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 64px;
+
+    background: var(--input-background);
+    border: 2px solid var(--input-border);
+    border-radius: 0.5rem;
+}
+
+input:checked{
+    background: var(--purple-box);
+    border: 2px solid var(--input-border-checked);
+}
