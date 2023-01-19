@@ -20,7 +20,7 @@
 
 body{
     background-color: var(--black-background);
-    padding: 6.25rem 7.5rem;
+
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -31,6 +31,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-block: 3rem;
+    padding-inline: 7.5rem;
+
+    position: fixed;
+    width: 100%;
+    background-color: var(--black-background);
 }
 
 button {
@@ -53,7 +59,8 @@ button {
 }
 
 main{
-
+    padding-top: 180px;
+    padding-inline: 7.5rem;
 }
 
 #form-habits{
@@ -117,4 +124,20 @@ input{
 input:checked{
     background: var(--purple-box);
     border: 2px solid var(--input-border-checked);
+}
+
+@media (max-width: 768px) {
+    header{
+        padding-inline: 6rem;
+    }
+
+    main{
+        padding-inline: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    button div{
+        display: none;
+    }
 }
