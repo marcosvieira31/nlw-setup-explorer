@@ -61,7 +61,7 @@ button {
 
     padding-top: 180px;
     padding-inline: 7.5rem;
-/*     width: fit-content; */
+    width: fit-content;
 }
 
 .habits{
@@ -134,6 +134,10 @@ input:checked{
 }
 
 @media (max-width: 600px) {
+    html{
+        font-size: 60%;
+    }
+    
     button div{
         display: none;
     }
